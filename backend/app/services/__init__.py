@@ -24,6 +24,7 @@ from app.services.data_drift import DataDriftService
 from app.services.fusion_monitor import FusionMonitorService
 from app.services.audit_trail import AuditTrailService
 from app.services.catalog_search import CatalogSearchService
+from app.services.read_progress import ReadProgressService
 
 SERVICES: dict[str, BaseModuleService] = {
     "source_def": SourceDefService(),
@@ -48,6 +49,7 @@ SERVICES: dict[str, BaseModuleService] = {
     "fusion_monitor": FusionMonitorService(),
     "audit_trail": AuditTrailService(),
     "catalog_search": CatalogSearchService(),
+    "read_progress": ReadProgressService(),
 }
 
 

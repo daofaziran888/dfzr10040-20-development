@@ -18,6 +18,7 @@
 │   ├── app/routers/resource.py  通用查询/导出/登记/动作接口
 │   ├── app/services/<key>.py    每个模块独立领域逻辑
 │   ├── app/services/base.py     共享服务骨架
+│   ├── app/read_progress.py     空窗确认与读取进度协调引擎
 │   └── app/store.py          内存数据仓库与示例数据
 ├── .gitignore
 └── docker-compose.yml
@@ -71,6 +72,7 @@ npm run dev
 | 数据漂移 | `data_drift` | 漂移记录 | 记录编号、宽表名称、漂移类型 |
 | 融合监控 | `fusion_monitor` | 监控指标 | 指标编号、融合作业、监控维度 |
 | 变更审计 | `audit_trail` | 审计记录 | 记录编号、变更目标、操作人 |
+| 空窗确认 | `read_progress` | 空窗确认 | 确认编号、数据源、窗口起始、窗口截止、结束回执 |
 | 目录检索 | `catalog_search` | 数据目录 | 目录编号、宽表名称、标签列表 |
 
 ## 约定
